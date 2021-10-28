@@ -10,5 +10,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+<<<<<<< HEAD
 
 //Kenth
+=======
+//potang ina mo Sean
+>>>>>>> ccf967ce2864fa458628d23a15b5ef3536e32159
