@@ -1,0 +1,34 @@
+@import "../scss/default/_color.scss";
+// import back from '../assets/img/galaxy.jpg'
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    // background-color: map-get($map: $myColors, $key: backgroundColor);
+    background-image: linear-gradient(rgba(54, 52, 52, 0.692), rgba(104, 102, 102, 0.692)), url(../assets/img/typing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Montserrat';
+}
+.main-container {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+}
+
+@import "../../views/commons/navbar";
+@import "../../views/pages/components/home";
+@import "../../views/pages/components/about";
+@import "../../views/pages/components/site"
+
+
+
+
+
+
+
+
+

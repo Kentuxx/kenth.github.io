@@ -1,0 +1,112 @@
+@import "../../helpers/scss/default/_color.scss";
+
+.nav-container {
+    // background-color: rgba($color: #949090, $alpha: 0.3);
+    font-family: 'Montserrat';
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 12vh;
+        max-width: 1200px;
+        margin: auto;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: map-get($map: $myColors, $key: titleColor);
+
+        .nav-logo {
+            position: relative;
+
+            .nav-logo-link {
+                text-decoration: none;
+                margin-right: 15px;
+                color: map-get($map: $myColors, $key: titleColor);
+                }
+                
+            }
+            .nav-logo .nav-logo-link::after {
+                content: '';
+                width: 0;
+                height: 3px;
+                background: map-get($map: $myColors, $key: navTransition);
+                position: absolute;
+                left: -5px;
+                bottom: -5px;
+                transition: 0.5s;
+            }
+            .nav-logo .nav-logo-link:hover::after {
+                width: 97%;
+            }
+        .links {
+                position: relative;
+
+                .nav-about {
+                    text-decoration: none;
+                    margin-right: 15px;
+                    color: map-get($map: $myColors, $key: titleColor);
+                }
+                .nav-site {
+                    text-decoration: none;
+                    margin-left: 15px;
+                    color: map-get($map: $myColors, $key: titleColor);
+                }
+                .nav-about::after {
+                    content: '';
+                    height: 3px;
+                    width: 0%;
+                    background: map-get($map: $myColors, $key: navTransition);
+                    position: absolute;
+                    left: -5px;
+                    bottom: -5px;
+                    transition: 0.5s;
+                }
+                .nav-about:hover::after {
+                    width: 56%;
+                }
+                .nav-site::after {
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: map-get($map: $myColors, $key: navTransition);
+                    position: absolute;
+                    left: 103px;
+                    bottom: -5px;
+                    transition: 0.5s;
+                }
+                .nav-site:hover::after {
+                    width: 36%;
+                }
+                .nav-active-1 {
+                    text-decoration: none;
+                    margin-right: 15px;
+                    color: map-get($map: $myColors, $key: titleColor);
+                }
+                .nav-active-1::after {
+                    content: '';
+                    height: 3px;
+                    width: 56%;
+                    background: map-get($map: $myColors, $key: navTransition);
+                    position: absolute;
+                    left: -5px;
+                    bottom: -5px;
+                }
+                .nav-active-2 {
+                    text-decoration: none;
+                    margin-left: 15px;
+                    color: map-get($map: $myColors, $key: titleColor);
+                }
+                .nav-active-2::after {
+                    content: '';
+                    height: 3px;
+                    width: 36%;
+                    background: map-get($map: $myColors, $key: navTransition);
+                    position: absolute;
+                    left: 103px;
+                    bottom: -5px;
+                }
+            }
+            
+    }
+        
+}

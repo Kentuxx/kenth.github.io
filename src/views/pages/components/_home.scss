@@ -1,0 +1,53 @@
+.body-part {
+    // margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+
+    .image-kenth {
+        width: 250px;
+        clip-path: circle();
+    }
+    h1 {
+        color: map-get($map: $myColors, $key: titleColor);
+    }
+    h3 {
+        font-family: 'Crimson-text';
+        color: map-get($map: $myColors, $key: subTitleColor);
+        margin-top: -15px;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .linked-in-react-icon {
+            border-radius: 50px;
+            font-size: 35px;
+            color: map-get($map: $myColors, $key: linkColor);
+            margin-right: 15px;
+        }
+        .github-react-icon {
+            font-size: 35px;
+            color: map-get($map: $myColors, $key: linkColor);
+            margin-right: 15px;
+        }
+        .fb-react-icon {
+            font-size: 35px;
+            color: map-get($map: $myColors, $key: linkColor);
+        }
+        .linked-in-react-icon:hover {
+            transition: 0.5s;
+            color: map-get($map: $myColors, $key: linkColorHover);
+        }
+        .github-react-icon:hover {
+            transition: 0.5s;
+            color: map-get($map: $myColors, $key: linkColorHover);
+        }
+        .fb-react-icon:hover {
+            transition: 0.5s;
+            color: map-get($map: $myColors, $key: linkColorHover);
+        }
+    }
+}

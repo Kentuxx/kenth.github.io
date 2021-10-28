@@ -1,0 +1,27 @@
+.about-part {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vh;
+
+    h1 {
+        font-style: bold;
+        color: map-get($map: $myColors, $key: titleColor);
+    }
+    h5 {
+        margin-top: -20px;
+        color: map-get($map: $myColors, $key: subTitleColor);
+    }
+    h3 {
+        font-style: italic;
+        font-family: 'Crimson-text';
+        margin-bottom: 33px;
+        color: map-get($map: $myColors, $key: titleColor);
+    }
+    p {
+        font-family: 'Crimson-text';
+        line-height: 25px;
+        font-size: 19px;
+        color: map-get($map: $myColors, $key: titleColor);
+    }
+}

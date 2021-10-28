@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 52, 52, 0.692)), to(rgba(104, 102, 102, 0.692))), url(../assets/img/typing.jpg);
+  background-image: linear-gradient(rgba(54, 52, 52, 0.692), rgba(104, 102, 102, 0.692)), url(../assets/img/typing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Montserrat';
+}
+
+.main-container {
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-container {
+  font-family: 'Montserrat';
+}
+
+.nav-container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 12vh;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav-container .nav .nav-logo {
+  position: relative;
+}
+
+.nav-container .nav .nav-logo .nav-logo-link {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.nav-container .nav .nav-logo .nav-logo-link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #FF5722;
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-container .nav .nav-logo .nav-logo-link:hover::after {
+  width: 97%;
+}
+
+.nav-container .nav .links {
+  position: relative;
+}
+
+.nav-container .nav .links .nav-about {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.nav-container .nav .links .nav-site {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.nav-container .nav .links .nav-about::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #FF5722;
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-container .nav .links .nav-about:hover::after {
+  width: 56%;
+}
+
+.nav-container .nav .links .nav-site::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #FF5722;
+  position: absolute;
+  left: 103px;
+  bottom: -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-container .nav .links .nav-site:hover::after {
+  width: 36%;
+}
+
+.nav-container .nav .links .nav-active-1 {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.nav-container .nav .links .nav-active-1::after {
+  content: '';
+  height: 3px;
+  width: 56%;
+  background: #FF5722;
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+}
+
+.nav-container .nav .links .nav-active-2 {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.nav-container .nav .links .nav-active-2::after {
+  content: '';
+  height: 3px;
+  width: 36%;
+  background: #FF5722;
+  position: absolute;
+  left: 103px;
+  bottom: -5px;
+}
+
+.body-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-part .image-kenth {
+  width: 250px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.body-part h1 {
+  color: #fff;
+}
+
+.body-part h3 {
+  font-family: 'Crimson-text';
+  color: #FF5722;
+  margin-top: -15px;
+}
+
+.body-part .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body-part .social-media .linked-in-react-icon {
+  border-radius: 50px;
+  font-size: 35px;
+  color: #BFBFBF;
+  margin-right: 15px;
+}
+
+.body-part .social-media .github-react-icon {
+  font-size: 35px;
+  color: #BFBFBF;
+  margin-right: 15px;
+}
+
+.body-part .social-media .fb-react-icon {
+  font-size: 35px;
+  color: #BFBFBF;
+}
+
+.body-part .social-media .linked-in-react-icon:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.body-part .social-media .github-react-icon:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.body-part .social-media .fb-react-icon:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.about-part {
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90vh;
+}
+
+.about-part h1 {
+  font-style: bold;
+  color: #fff;
+}
+
+.about-part h5 {
+  margin-top: -20px;
+  color: #FF5722;
+}
+
+.about-part h3 {
+  font-style: italic;
+  font-family: 'Crimson-text';
+  margin-bottom: 33px;
+  color: #fff;
+}
+
+.about-part p {
+  font-family: 'Crimson-text';
+  line-height: 25px;
+  font-size: 19px;
+  color: #fff;
+}
+
+.site-page {
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90vh;
+}
+
+.site-page h1 {
+  font-style: bold;
+  color: #fff;
+}
+
+.site-page h5 {
+  margin-top: -20px;
+  color: #FF5722;
+}
+
+.site-page h3 {
+  margin-bottom: 33px;
+  font-style: italic;
+  font-family: 'Crimson-text';
+  color: #fff;
+}
+
+.site-page p {
+  font-family: 'Crimson-text';
+  color: #fff;
+  line-height: 25px;
+  font-size: 19px;
+}
+/*# sourceMappingURL=main.css.map */
