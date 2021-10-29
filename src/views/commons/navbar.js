@@ -26,10 +26,10 @@ const Navbar = () => {
                     <div className='links'>
                             <Link to='/about' 
                                 onClick= {() => setActive(1)}
-                                className={active == 1 ? 'nav-active-1' : 'nav-about'} > About </Link> 
+                                className={active === 1 ? 'nav-active-1' : 'nav-about'} > About </Link> 
                             <Link to='/site' 
                                 onClick={() => setActive(2)}
-                                className= {active == 2 ? 'nav-active-2' : 'nav-site'}> Site </Link>
+                                className= {active === 2 ? 'nav-active-2' : 'nav-site'}> Site </Link>
                     </div>
                 </nav>
             </div>
